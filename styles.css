@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Sawarabi+Gothic&display=swap');
+
 body {
+    font-family: "Google Sans", Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #212738;
+    background-image: url("https://images.unsplash.com/photo-1714594923299-e915b7d71701?q=80&w=1226&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    background-color: #F97068;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #D1D646;
+    padding: 8px 16px;
+    color: #212738;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.section-activities {
+    background-color: #EDF2EF;
 }
