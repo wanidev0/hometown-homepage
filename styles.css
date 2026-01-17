@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Sawarabi+Gothic&display=swap');
 
+:root {
+    --primary-color: #212738;
+    --secondary-color: #EDF2EF;
+}
+
 body {
     font-family: "Google Sans", Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
@@ -7,8 +12,10 @@ body {
 }
 
 .hero {
-    background-color: #212738;
+    background-color: var(--primary-color);
     background-image: url("https://images.unsplash.com/photo-1714594923299-e915b7d71701?q=80&w=1226&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -31,11 +38,48 @@ h1 {
     font-weight: bold;
     background-color: #D1D646;
     padding: 8px 16px;
-    color: #212738;
+    color: var(--primary-color);
     border-radius: 10px;
     max-width: 500px;
 }
 
 .section-activities {
-    background-color: #EDF2EF;
+    background-color: var(--secondary-color);
+    padding: 50px;
+    color: var(--primary-color);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.activity {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.act-img {
+    width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    /* object-view-box: ; */
+    border-radius: 50%;
+}
+
+/* .act-title {
+
+} */
+
+.act-desc {
+    margin: 0;
 }
